@@ -1,0 +1,50 @@
+#calendar {
+    background-color: green;
+    width: 100%;
+
+    .calendar-container {
+        max-width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+
+        .flip-card-container {
+            border: 1px solid black;
+            background-image: url("../assets/card-mob.jpg");
+            background-size: cover;
+            margin: 0.30rem 0.15rem;
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+            color: #fff;
+
+            .flip-card {
+                .flip-card-front {
+                    display: none; //esto tengo que tener OJO!
+                }
+
+                .flip-card-back {
+                    height: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    color: white;
+
+                    p {
+                        font-size: 1.25rem;
+                    }
+
+                    a {
+                        font-size: 1.25rem;
+                        color: #fff;
+                        background-color: green;
+                        border: 1px solid tomato;
+                        padding: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

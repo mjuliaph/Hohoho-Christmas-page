@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,66 @@ body {
   /* background-image: url("../assets/back.jpg"); */
   background-size: 100%;
   width: 100%; }
+
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  margin: 1rem auto;
+  margin-bottom: 0; }
+  .navbar .navbar-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .navbar .navbar-list .navbar-item a {
+      font-family: Christmas;
+      font-size: 3rem;
+      text-decoration: none;
+      color: black; }
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: #f2f2f2;
+  background-image: url("../assets/img-footer.png");
+  background-repeat: repeat-x;
+  background-size: 80px;
+  background-position: bottom;
+  filter: opacity(0.6); }
+  footer .despedida {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .despedida h4 {
+      color: green;
+      font-family: Christmas;
+      font-size: 2rem;
+      letter-spacing: 3px; }
+
+#ho-image {
+  color: #fff;
+  background-color: #f2f2f2; }
+  #ho-image .ho-container {
+    background: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; }
+    #ho-image .ho-container .ho-text {
+      font-family: 'Anton', sans-serif;
+      font-size: 4rem;
+      width: 100%;
+      text-align: center;
+      color: transparent;
+      font-weight: 300;
+      background-image: url("../assets/bg-gold.jpg");
+      background-size: cover;
+      background-position-y: center;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
 
 /******* GALERÍA DE IMÁGENES - RECETAS ******/
 #recipes {
@@ -89,6 +150,9 @@ body {
       height: auto; }
 
 #calendar {
+  background-image: url("../assets/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: green;
   width: 100%;
   padding: 1rem 0; }
@@ -132,6 +196,10 @@ body {
           border: 1px solid tomato;
           border-radius: 5px;
           padding: 0.5rem; }
+
+@media all and (min-width: 576px) {
+  #ho-image .ho-container .ho-text {
+    font-size: 6rem; } }
 
 @media all and (min-width: 992px) {
   h1 {
@@ -210,6 +278,9 @@ body {
       #recipes .recipe-gallery .card-recipe.img9 {
         grid-column: 1/4;
         grid-row: 1/2; }
+  /****** HO HO HO ******/
+  #ho-image .ho-container .ho-text {
+    font-size: 8rem; }
   /****** CALENDARIO ******/
   #calendar {
     background-color: unset;
@@ -298,4 +369,7 @@ body {
       grid-row: 4/6; }
     #recipes .recipe-gallery .card-recipe.img9 {
       grid-column: 1/2;
-      grid-row: 5/6; } }
+      grid-row: 5/6; }
+  /****** HO HO HO ******/
+  #ho-image .ho-container .ho-text {
+    font-size: 10rem; } }

@@ -1,3 +1,14 @@
+@media all and (min-width: 576px) {
+    #ho-image {
+        .ho-container {
+            .ho-text {
+                font-size: 6rem;
+            }
+        }
+    }
+}
+
+
 @media all and (min-width: 992px) {
 
     h1 {
@@ -169,6 +180,15 @@
         }
     }
 
+    /****** HO HO HO ******/
+
+    #ho-image {
+        .ho-container {
+            .ho-text {
+                font-size: 8rem;
+            }
+        }
+    }
 
     /****** CALENDARIO ******/
     #calendar {
@@ -319,6 +339,16 @@
                     grid-column: 1/2;
                     grid-row: 5/6;
                 }
+            }
+        }
+    }
+
+    /****** HO HO HO ******/
+
+    #ho-image {
+        .ho-container {
+            .ho-text {
+                font-size: 10rem;
             }
         }
     }
